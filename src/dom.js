@@ -8,7 +8,7 @@ const main = document.getElementsByClassName("main");
 export const imgContainer = document.getElementsByClassName("img-container");
 //Form
 export const form = document.getElementById("form");
-export const inputText = document.forms.elements.inputText;
+export const inputText = document.getElementById("inputText");
 export const errorBox = form.lastElementChild;
 //Button
 export const btnSumbit = document.getElementById("btn");
