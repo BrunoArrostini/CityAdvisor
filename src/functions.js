@@ -1,23 +1,31 @@
-import { inputText, btnSumbit, errorBox} from "./dom";
+import axios from "axios";
+import { inputText, btnSubmit, errorBox, form, cityScore, cityInfo, cityCategories} from "./dom";
 
-let errorMessage = document.createElement("p");
-errorBox.append(errorMessage);
-errorMessage.innerText = "Please type in a city";
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+    cityInfo.innerHTML = "";
+    cityCategories.innerHTML = "";
+    getCity();
+})
 
-btnSumbit.addEventListener("submit" function(e){
-    return inputText.value;
+export function getCity(city){
+    try{
+        const res = await axios.get(`https://api.teleport.org/api/urban_areas/slug:${getCity}/scores/`)
+    }
+    } return inputText.value.toLowerCase().trim().replaceAll(' ', '-');
+        
 }
 
-export async function getCity(city){
-    if(inputText.value == " "){
-    return errorBox;
-    } return inputText.value.toLowerCase().trim().replaceAll(' ', '-');    
-}
 export function showError(err){
-    if (getCity == true){
+    let errorMessage = document.createElement("p");
+    errorBox.append(errorMessage);
+    
+
+    if (inputText.value = ""){
         errorBox.style.display= "none";
     } else {
-        return errorMessage;
+        errorBox.style.display= "block";
     }
 }
+
 

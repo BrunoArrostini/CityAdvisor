@@ -90,9 +90,8 @@ h1{
     cursor: pointer;
 }
 #errorBox{
-    color:  white;
+    color:  red;
     font-style: italic;
-    display: none;
    
 }
 .frame{

@@ -11,11 +11,11 @@ export const form = document.getElementById("form");
 export const inputText = document.getElementById("inputText");
 export const errorBox = form.lastElementChild;
 //Button
-export const btnSumbit = document.getElementById("btn");
+export const btnSubmit = document.getElementById("btn");
 //Results
 export const cityScore = document.getElementById("cityScore");
 export const cityInfo = document.getElementById("cityInfo");
-
+export const cityCategories = document.getElementById("cityCategories");
 
 
 
