@@ -2,4 +2,4 @@ import "./main.css";
 
 import world from "./assets/img/world.jpg";
 import {inputText} from "./dom";
-import { getCity, showError } from "./functions";
+import { getCity, showError} from "./functions";
