@@ -11,9 +11,10 @@ form.addEventListener("submit", function(e){
 export async function getCity(city){
     const res = await axios.get(`https://api.teleport.org/api/urban_areas/slug:${city.toLowerCase().trim().replaceAll(' ', '-')}/scores/`)
     .then (res =>{
+        //console.log(res);
         cityScore.innerHTML = res.data.teleport_city_score.toFixed(2);
         cityInfo.innerHTML = res.data.summary;
-        //cityCategories.innerHTML = res.data.categories;
+       // cityCategories.innerHTML = res.data[categories.name];
         }) 
     .catch (err =>{ 
         errorBox.innerHTML= "Please retry <br> city name must be in english";
