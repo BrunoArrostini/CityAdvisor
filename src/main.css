@@ -9,8 +9,14 @@ body{
 .header{
     background-color: white;
     width: 100%;
-    height: 350px;
+    height: 400px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.text{
+    display: block;
 }
 h1{
     margin-top: 100px;
@@ -18,38 +24,44 @@ h1{
     text-shadow: -2px -2px black;
 }
 .main-text{
-    margin-top: 70px;
+    margin-top: 40px;
     word-spacing: 1.5px;
     line-height: 20px;
     font-weight: 400;
 }
 .main{
     width: 100%;
-    height: 400px;
+    height: 430px;
     background: linear-gradient(to bottom,gray,lightgray 50%, lightgray 75%);
     border-top: 1px solid black;
     text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     position: relative;    
 }
 .img-container{
     width: 500px;
     height: 300px;
-    border-radius:  250px;;
+    border-radius:  250px;
     background-image: url(./assets/img/world.jpg);
     background-size: contain;
+    background-repeat:round;
     display: block;
     position:absolute;
-    top: -110px;
+    top: 50px;
     border: 1px solid black;
     filter: brightness(115%);
     z-index: 1;
     position: relative;
 }
-
 #form{
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
 }
 #label{
     font-size: 20px;
@@ -59,7 +71,8 @@ h1{
                  -1px -1px white;                           
 }  
 #inputText{
-    width: 150px;
+    margin-top: 4px;
+    width: 350px;
     padding: 5px; 
     font-size: 15px;
     border: 1.5px solid black;
@@ -67,16 +80,15 @@ h1{
     text-align: center;
 }
 #btn{
-    width: 315px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    width: 350px;
+    padding: 5px;
     margin-top: 3px;
     border-radius: 20px;
-    background-color: white;
+    background-color:rgb(249, 255, 127);
     border:0.5px solid black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
-    background-color: white;
+    color: black;
 }
 #btn:hover{
     width: 315px;
@@ -90,9 +102,21 @@ h1{
     cursor: pointer;
 }
 #errorBox{
-    color: black;
-    font-style: italic;
-   
+    font-family:'Times New Roman', Times, serif;
+    color:black;
+    font-weight: 700;
+    text-align: center;
+}
+#cityScore{
+    color: rgb(249, 255, 127);
+    text-align: center;
+    margin: 10px;
+}
+#cityInfo{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
 }
 .frame{
     padding: 380px;

@@ -8,24 +8,24 @@
 <script defer src="main.js"></script></head>
 <body>
     <header class="header">
-        <h1>Welcome on City Advisor!</h1>
-        <p class="main-text">Here you can learn more about cities lifestyle, useful info & a lot more. <br>
-           Find out wich city has the top score, maybe it could be your city, maybe not. <br>
-           Maybe it could be an american city, who knows? Type in and try it by yourself.
-        </p>
+        <div class="text">
+            <h1>Welcome on City Advisor!</h1>
+             <p class="main-text">Here you can learn more about cities lifestyle, useful info & a lot more. <br>
+              Find out wich city has the top score, maybe it could be your city, maybe not. <br>
+              Maybe it could be an american city, who knows? Type in and try it by yourself.
+             </p>
+        </div>
+        
+        <form id="form">
+                <label id="label">TYPE IN A CITY</label>
+                <input type="text" id="inputText" required>
+                <button id="btn" type="submit">Click here to see the score</button>    
+       </form>  
     </header>
 
     <main class="main">
-        <div class="img-container">
-            <form id="form">
-                <label id="label">TYPE IN A CITY</label>
-                <input type="text" id="inputText" required>
-                <button id="btn" type="submit">Click here to see the score</button>
-                
-            </form>
-            <div id="errorBox"></div>
-        </div> 
-          
+        <div id="errorBox"></div>
+        <div class="img-container"></div> 
         <div id="cityScore"></div>
         <div id="cityInfo"></div> 
         <div id="cityCategories"></div>
