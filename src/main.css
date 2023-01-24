@@ -107,6 +107,12 @@ h1{
     font-weight: 700;
     text-align: center;
 }
+.results-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 #cityScore{
     color: rgb(249, 255, 127);
     text-align: center;
@@ -115,8 +121,14 @@ h1{
 #cityInfo{
     text-align: center;
     margin-top: 10px;
-    margin-left: 400px;
-    margin-right: 400px;
+    overflow: scroll;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+#cityCategories{
+    margin-top: 15px;
+    overflow-x: scroll;
+    height: 200px;
 }
 .frame{
     padding: 380px;

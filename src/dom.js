@@ -13,6 +13,7 @@ export const errorBox = document.getElementById("errorBox");
 //Button
 export const btnSubmit = document.getElementById("btn");
 //Results
+export const resultsContainer = document.getElementById("results-container");
 export const cityScore = document.getElementById("cityScore");
 export const cityInfo = document.getElementById("cityInfo");
 export const cityCategories = document.getElementById("cityCategories");
