@@ -42,18 +42,15 @@ h1{
 }
 .img-container{
     width: 500px;
-    height: 300px;
+    height: 250px;
     border-radius:  250px;
     background-image: url(./assets/img/world.jpg);
     background-size: contain;
     background-repeat:round;
     display: block;
-    position:absolute;
-    top: 50px;
     border: 1px solid black;
     filter: brightness(115%);
     z-index: 1;
-    position: relative;
 }
 #form{
     margin-top: 30px;
@@ -122,13 +119,15 @@ h1{
     text-align: center;
     margin-top: 10px;
     overflow: scroll;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    z-index: 2;
 }
 #cityCategories{
     margin-top: 15px;
-    overflow-x: scroll;
     height: 200px;
+    margin-bottom: 30px;
+    z-index: 2;
 }
 .frame{
     padding: 380px;
@@ -147,3 +146,27 @@ footer{
     font-weight: 600;
 }
 
+@media only screen and(max-width:375px) {
+    .header{
+        height: 335.5px;
+        width: 175px;
+    }
+    h1{
+        width: 30%;
+    }
+    .main{
+        height: 335.5px;
+        width: 175px;
+    }
+    .img-container{
+        width: 50%;
+        height: 50%;
+    }
+    .frame{
+        padding: 70px;
+        margin: 10px;
+    }
+    .img-container{
+        width: 100px;
+    }
+}
