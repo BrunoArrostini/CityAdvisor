@@ -58,7 +58,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 100;
+    z-index: 2;
 }
 #label{
     font-size: 20px;
@@ -146,17 +146,42 @@ footer{
     font-weight: 600;
 }
 
-@media only screen and(max-width:375px) {
+@media only screen and (max-width: 414px){
+    body{
+        height: 100vh;
+    }
     .header{
-        height: 335.5px;
-        width: 175px;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+    }
+    .text{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     h1{
-        width: 30%;
+        margin-top: 10px;
+        width: 90%;
+        height: 5%;
+        font-size: large;
+    }
+    .main-text{
+        width: 70%;
+        margin-top: 30px;
+        height: 5%;
+        line-height: normal;
+        word-spacing: normal;
+        font-size: 13px;
     }
     .main{
-        height: 335.5px;
-        width: 175px;
+        height: 50%;
+        width: 100%;
     }
     .img-container{
         width: 50%;
@@ -164,9 +189,78 @@ footer{
     }
     .frame{
         padding: 70px;
-        margin: 10px;
+        margin: 20px;
     }
     .img-container{
-        width: 100px;
+        width: 50%;
+    }
+    #form{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 100;
+    }
+    #label{
+        font-size: 18px;                          
+    }  
+    #inputText{
+        margin-top: 4px;
+        width: 130%;
+    }
+    #btn{
+        width: 130%;
+        margin-top: 5px;
+        border:1.5px solid black;
+    }
+    #btn:hover{
+        width: 140%;
+        border:1.5px solid black;
+    }
+    .results-container{
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    #cityInfo{
+        text-align: center;
+        margin-top: 5px;
+        height: 40%;
+        overflow: scroll;
+        margin-left: 70px;
+        margin-right: 70px;
+        z-index: 2;
+    }
+    #cityInfo:active{
+        z-index: 4;
+        height: 100%;
+        width: 90%;
+        position: fixed;
+        top: 45%;
+        background: linear-gradient(to bottom,gray,lightgray 50%, lightgray 75%);
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #cityCategories{
+        margin-top: 7px;
+        height: 40%;
+        margin-bottom: 1px;
+        z-index: 2;
+        border-top: 1px solid black;
+    }
+    #cityCategories:active{
+        z-index: 4;
+        height: 100%;
+        width: 90%;
+        position: fixed;
+        top: 45%;
+        background: linear-gradient(to bottom,gray,lightgray 50%, lightgray 75%);
+    }    
+    footer{
+        font-size: small;
     }
 }

@@ -20,12 +20,16 @@ export async function getCity(city){
             cityCategories.appendChild(elem);
             cityCategories.style.overflow="scroll";
             cityCategories.style.borderColor="rgb(249, 255, 127)";
-            cityCategories.style.borderStyle="inset";
         });           
     })
     .catch (err =>{ 
-        errorBox.innerHTML= "Please retry <br> city name must be in english";
+        errorBox.innerHTML= "Please retry <br> City name must be in english";
     });  
 }
 
-
+export async function showCityImg(){
+    const img = await axios.get(`https://api.teleport.org/api/urban_areas/slug:${city.toLowerCase().trim().replaceAll(' ', '-')}/images/`)
+    .then (img=>{
+        console.log(img.data.photos[1]);
+    });
+}
