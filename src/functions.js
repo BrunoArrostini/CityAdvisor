@@ -1,5 +1,5 @@
 import axios from "axios";
-import { inputText, errorBox, form, cityScore, cityInfo, cityCategories, imgContainer, resultsContainer, main} from "./dom";
+import { inputText, errorBox, form, cityScore, cityInfo} from "./dom";
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
@@ -11,7 +11,7 @@ form.addEventListener("submit", function(e){
 export async function getCity(city){
     const res = await axios.get(`https://api.teleport.org/api/urban_areas/slug:${city.toLowerCase().trim().replaceAll(' ', '-')}/scores/`)
     .then (res =>{
-        cityScore.innerHTML = "City score: " + res.data.teleport_city_score.toFixed(2);       
+        cityScore.innerHTML = "City Score: " + res.data.teleport_city_score.toFixed(2);       
         cityInfo.innerHTML =  res.data.summary;
         res.data.categories.forEach((e, i) => {
             const elem = document.createElement("div");
