@@ -1,5 +1,5 @@
 import axios from "axios";
-import { inputText, errorBox, form, cityScore, cityInfo} from "./dom";
+import { inputText, errorBox, form, cityScore, cityInfo, cityCategories} from "./dom";
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
@@ -13,13 +13,20 @@ export async function getCity(city){
     .then (res =>{
         cityScore.innerHTML = "City Score: " + res.data.teleport_city_score.toFixed(2);       
         cityInfo.innerHTML =  res.data.summary;
+        cityInfo.style.display="flex";
+        cityInfo.style.flexDirection="column"
+        cityInfo.style.paddingLeft="100px";
+        cityInfo.style.paddingRight="100px";
+        
         res.data.categories.forEach((e, i) => {
             const elem = document.createElement("div");
             elem.id = `cat${i}`;
             elem.textContent = `${e.name}: ${e.score_out_of_10.toFixed(2)}`;
             cityCategories.appendChild(elem);
-            cityCategories.style.overflow="scroll";
-            cityCategories.style.borderColor="rgb(249, 255, 127)";
+            cityCategories.style.paddingTop="20px";
+            cityCategories.style.paddingBottom="10px";
+
+            window.scrollTo(300,600);
         });           
     })
     .catch (err =>{ 

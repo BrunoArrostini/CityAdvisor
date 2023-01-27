@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/globus.svg"/>
+    <!-- HTML Meta Tags -->
+   <title>Bruno Arrostini</title>
+   <meta name="description" content="Type in a city and learn more about it">
+
+   <!-- Facebook Meta Tags -->
+   <meta property="og:url" content="https://cityadvisor.netlify.app">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="City Advisor">
+   <meta property="og:description" content="Type in a city and learn more about it">
+   <meta property="og:image" content="https://cityadvisor.netlify.app/assets/img/ScreenCityAdv.png">
+
+
+   <!-- Linkedin Meta Tags -->
+   <meta property='og:title' content='City Advisor'/>
+   <meta property='og:image' content="https://cityadvisor.netlify.app/assets/img/ScreenCityAdv.png"/>
+   <meta property='og:description' content="Type in a city and learn more about it"/>
+   <meta property='og:url' content="https://cityadvisor.netlify.app"/>
     <title>City Advisor</title>
 <script defer src="main.js"></script></head>
 <body>
@@ -17,9 +35,9 @@
         </div>
         
         <form id="form">
-                <label id="label">TYPE IN A CITY</label>
+                <label id="label">Type in a city</label>
                 <input type="text" id="inputText" required>
-                <button id="btn" type="submit">Click here to see the score</button>    
+                <button id="btn" type="submit">Check the score</button>    
        </form>  
     </header>
 
@@ -27,13 +45,12 @@
         <div id="errorBox"></div>
         <div id="cityScore"></div>
         <div class="img-container"></div>
-        <div class="results-container">
-            <div id="cityInfo"></div> 
-            <div id="cityCategories"></div>
-        </div>
-       
-    </main>   
-    <div class="frame"></div>
+    </main>
+        <div id="cityInfo"></div>
+        <div id="cityCategories"></div>
+    
+     
+    
     <footer>Designed by Bruno Arrostini - Copyright 2023</footer>
 </body>
 </html>
