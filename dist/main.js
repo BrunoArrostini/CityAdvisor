@@ -169,7 +169,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _assets_img_globus_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/img/globus.svg */ \"./src/assets/img/globus.svg\");\n/* harmony import */ var _assets_img_ScreenCityAdv_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/img/ScreenCityAdv.png */ \"./src/assets/img/ScreenCityAdv.png\");\n/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dom */ \"./src/dom.js\");\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./functions */ \"./src/functions.js\");\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://cityadvisor/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _assets_img_globus_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/img/globus.svg */ \"./src/assets/img/globus.svg\");\n/* harmony import */ var _assets_img_globo_ico__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/img/globo.ico */ \"./src/assets/img/globo.ico\");\n/* harmony import */ var _assets_img_ScreenCityAdv_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/img/ScreenCityAdv.png */ \"./src/assets/img/ScreenCityAdv.png\");\n/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dom */ \"./src/dom.js\");\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./functions */ \"./src/functions.js\");\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://cityadvisor/./src/index.js?");
 
 /***/ }),
 
@@ -181,6 +181,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mai
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"ScreenCityAdv.png\";\n\n//# sourceURL=webpack://cityadvisor/./src/assets/img/ScreenCityAdv.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/globo.ico":
+/*!**********************************!*\
+  !*** ./src/assets/img/globo.ico ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"globo.ico\";\n\n//# sourceURL=webpack://cityadvisor/./src/assets/img/globo.ico?");
 
 /***/ }),
 
