@@ -2,7 +2,7 @@
 
 
 ## Overview 📖
-**City Advisor**  is a single page app where yo can type in a city name and it will display an image & some info about the city. 
+**City Advisor**  is a single page app where you can type in a city name and it will display an image & some info about the city. 
 
 There's a button that allows to submit the form and shows :
 
@@ -13,7 +13,7 @@ There's a button that allows to submit the form and shows :
 
 City name must be typed in english, if not an error text will display.
 
-Error text specifies taht city name couldn't be in the list as well.
+Error text specifies that city name couldn't be in the list as well.
 
 I chose a simple style with strong colors and a globe image to catch user attention.
 
