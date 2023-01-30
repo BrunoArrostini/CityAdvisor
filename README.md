@@ -6,10 +6,10 @@
 
 There's a button that allows to submit the form and shows :
 
-*City global score
+* City global score
 * An image of the city
 * A city summary
-*City lifetsyle categories with scores
+* City lifetsyle categories with scores
 
 City name must be typed in english, if not an error text will display.
 
@@ -35,10 +35,10 @@ Css file has been used to style the page and to set media query to get a respons
 
 ## Link 🔗
 
-Clicking on the image below you'll go quicly to the page:
+Clicking on the globe below you'll go quicly to the page:
 
 <a href="https://cityadvisor.netlify.app"><img src="src/assets/img/globus.svg"></a>
 
 ## License 
 
-City Advisor is licensed by <a href= "https://github.com/BrunoArrostini/counter/blob/main/LICENSE.md"> MIT LICENSE.
+City Advisor is licensed by <a href="https://github.com/BrunoArrostini/counter/blob/main/LICENSE.md"> MIT LICENSE.
