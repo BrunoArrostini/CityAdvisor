@@ -14,7 +14,7 @@ module.exports = {
     plugins:[new HtmlWebpackPlugin({
       template:"./src/template.html"
     })],
-    plugins:[new FaviconsWebapckPlugins("./src/assets/img/globo.ico")],
+    plugins:[new FaviconsWebapckPlugins("./src/assets/img/globus.svg")],
     module: {
         rules: [
           {
