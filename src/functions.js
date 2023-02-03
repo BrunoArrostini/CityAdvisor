@@ -6,6 +6,7 @@ form.addEventListener("submit", function(e){
     cityInfo.innerHTML = "";
     cityCategories.innerHTML = "";
     errorBox.innerHTML="";
+    cityPic.innerHTML="";
     getCity(inputText.value);
     showCityImg(inputText.value);
 });
