@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require ("html-webpack-plugin");
 const path = require("path");
+const FaviconsWebapckPlugins = require ("favicons-webpack-plugin");
 
 module.exports = {
     
@@ -13,6 +14,7 @@ module.exports = {
     plugins:[new HtmlWebpackPlugin({
       template:"./src/template.html"
     })],
+    plugins:[new FaviconsWebapckPlugins("./src/assets/img/globo.ico")],
     module: {
         rules: [
           {
